@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>ESRI.ArcGIS.Maplex</name>
+  </assembly>
+  <members>
+    <member name="T:ESRI.ArcGIS.Maplex.IEnumMaplexPlacedLabel">
+      <summary>Provides access to an enumeration of placed labels created by Maplex Overposter.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.Maplex.IEnumMaplexPlacedLabel.Next">
+      <summary>Next placed label in the enumeration.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.Maplex.IEnumMaplexPlacedLabel.Reset">
+      <summary>Reset the enumeration to the beginning.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.Maplex.IMaplexAnnotateMap">
+      <summary>Provides access to members that control the Labeling (annotation) of a map.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.Maplex.IMaplexOverposter">
+      <summary>Provides access to members that control the Maplex Overposter.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.Maplex.IMaplexOverposter.AddBarriers(ESRI.ArcGIS.Carto.esriBasicOverposterWeight,ESRI.ArcGIS.Geometry.IGeometryCollection)">
+      <summary>Adds a barrier object that placed objects must avoid.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.Maplex.IMaplexOverposter.AddClass(ESRI.ArcGIS.Carto.ILabelEngineLayerProperties)">
+      <summary>Adds a class to the overposter and specifies its properties.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.Maplex.IMaplexOverposter.AddFeature(System.Int32,ESRI.ArcGIS.Geometry.IGeometry,ESRI.ArcGIS.Display.ISymbol,System.Int32,System.String,System.Double,System.Int32)">
+      <summary>Adds a feature with its associated label (optional) to the overposter.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.Maplex.IMaplexOverposter.AddSymbol(System.Int32,ESRI.ArcGIS.Display.ISymbol,ESRI.ArcGIS.Geometry.IGeometry,System.Int32)">
+      <summary>Adds a symbol to be placed.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Maplex.IMaplexOverposter.Capabilities(ESRI.ArcGIS.Carto.ILayer)">
+      <summary>Overposter capabilities for the specified layer.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Maplex.IMaplexOverposter.ClassCount">
+      <summary>The number of classes.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.Maplex.IMaplexOverposter.Initialize(ESRI.ArcGIS.Geometry.IEnvelope,ESRI.ArcGIS.Display.IDisplay,ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Carto.IMaplexOverposterProperties,ESRI.ArcGIS.esriSystem.ITrackCancel)">
+      <summary>Initializes the overposter for drawing into the specified area of the map display.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Maplex.IMaplexOverposter.PlacedLabelCount">
+      <summary>The number of unplaced labels. Only valid after calling PlaceObjects.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Maplex.IMaplexOverposter.PlacedLabels">
+      <summary>Enumeration of placed labels.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.Maplex.IMaplexOverposter.PlaceLabels">
+      <summary>Places labels using the overposter.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.Maplex.IMaplexOverposter.ResetClasses">
+      <summary>Removes all classes from the overposter.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Maplex.IMaplexOverposter.UnplacedLabelCount">
+      <summary>The number of unplaced labels. Only valid after calling PlaceObjects.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Maplex.IMaplexOverposter.UnplacedLabels">
+      <summary>Enumeration of unplaced labels.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.Maplex.IMaplexPlacedLabel">
+      <summary>Provides access to members that define a placed label created by Maplex Overposter.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Maplex.IMaplexPlacedLabel.AnchorPoint">
+      <summary>The anchor point used for text backgrounds with a callout.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Maplex.IMaplexPlacedLabel.Bounds">
+      <summary>The bounds of the placed label.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Maplex.IMaplexPlacedLabel.CharacterSpacing">
+      <summary>The character spacing of the placed label.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Maplex.IMaplexPlacedLabel.CharacterWidth">
+      <summary>The character width of the placed label.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Maplex.IMaplexPlacedLabel.CJKCharactersRotation">
+      <summary>Indicates if CJK charcters are rotated.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Maplex.IMaplexPlacedLabel.ClassIndex">
+      <summary>Class index associated with the label.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Maplex.IMaplexPlacedLabel.FeatureID">
+      <summary>FeatureID associated with the placed label.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Maplex.IMaplexPlacedLabel.HorizontalAlignment">
+      <summary>The horizontal alignment for the placed label.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Maplex.IMaplexPlacedLabel.Label">
+      <summary>Text string that represents the label.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Maplex.IMaplexPlacedLabel.Leading">
+      <summary>The leading value for stacked labels.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Maplex.IMaplexPlacedLabel.ObjectType">
+      <summary>Type of the placed object.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Maplex.IMaplexPlacedLabel.PlacementCode">
+      <summary>Code that indicates success/failure of placement.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Maplex.IMaplexPlacedLabel.Size">
+      <summary>Text size of the placed label.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Maplex.IMaplexPlacedLabel.TextPath">
+      <summary>Text path geometry for positioning the text.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Maplex.IMaplexPlacedLabel.TextPathType">
+      <summary>Type of text path.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.Maplex.IMaplexPlacedLabel.WordSpacing">
+      <summary>The word spacing of the placed label.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.Maplex.EnumMaplexPlacedLabel">
+      <summary>A list of placed labels created by the Maplex Overposter.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.Maplex.EnumMaplexPlacedLabelClass">
+      <summary>A list of placed labels created by the Maplex Overposter.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.Maplex.EnumMaplexPlacedLabelClass.Next">
+      <summary>Next placed label in the enumeration.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.Maplex.EnumMaplexPlacedLabelClass.IEnumMaplexPlacedLabel_Next">
+      <summary>Next placed label in the enumeration.</summary>
+    </member>
+    <member name="ESRI.ArcGIS.Maplex..">
+      <summary>A list of placed labels created by the Maplex Overposter. Constructor has no input arguments.</summary>
+    </member>
+    <member name="ESRI.ArcGIS.Maplex.._">
+      <summary>A list of placed labels created by the Maplex Overposter. Constructor has no input arguments.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.Maplex.EnumMaplexPlacedLabelClass.#ctor">
+      <summary>A list of placed labels created by the Maplex Overposter. Constructor has no input arguments.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.Maplex.EnumMaplexPlacedLabelClass.Reset">
+      <summary>Reset the enumeration to the beginning.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.Maplex.EnumMaplexPlacedLabelClass.IEnumMaplexPlacedLabel_Reset">
+      <summary>Reset the enumeration to the beginning.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.Maplex.MaplexAnnotateFeature">
+      <summary>A renderer for labeling one feature.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.Maplex.MaplexAnnotateFeatureClass">
+      <summary>A renderer for labeling one feature.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.Maplex.MaplexAnnotateFeatureClass.Label(ESRI.ArcGIS.Carto.IAnnotateLayerProperties,ESRI.ArcGIS.Geodatabase.IFeature,ESRI.ArcGIS.Display.IDisplay,ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Carto.IBarrierCollection,ESRI.ArcGIS.Carto.IElement@,ESRI.ArcGIS.Carto.IElement@)">
+      <summary>Labels a feature based on the properties given.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.Maplex.MaplexAnnotateFeatureClass.IAnnotateFeature_Label(ESRI.ArcGIS.Carto.IAnnotateLayerProperties,ESRI.ArcGIS.Geodatabase.IFeature,ESRI.ArcGIS.Display.IDisplay,ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Carto.IBarrierCollection,ESRI.ArcGIS.Carto.IElement@,ESRI.ArcGIS.Carto.IElement@)">
+      <summary>Labels a feature based on the properties given.</summary>
+    </member>
+    <member name="ESRI.ArcGIS.Maplex..">
+      <summary>A renderer for labeling one feature. Constructor has no input arguments.</summary>
+    </member>
+    <member name="ESRI.ArcGIS.Maplex.._">
+      <summary>A renderer for labeling one feature. Constructor has no input arguments.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.Maplex.MaplexAnnotateFeatureClass.#ctor">
+      <summary>A renderer for labeling one feature. Constructor has no input arguments.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.Maplex.MaplexAnnotateFeatureClass.Label(ESRI.ArcGIS.Carto.IOverposterProperties,ESRI.ArcGIS.Carto.IAnnotateLayerProperties,ESRI.ArcGIS.Geodatabase.IFeature,ESRI.ArcGIS.Display.IDisplay,ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Carto.IBarrierCollection,ESRI.ArcGIS.Carto.IElement@,ESRI.ArcGIS.Carto.IElement@)">
+      <summary>Labels a feature based on the properties given.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.Maplex.MaplexAnnotateFeatureClass.IAnnotateFeature2_Label(ESRI.ArcGIS.Carto.IOverposterProperties,ESRI.ArcGIS.Carto.IAnnotateLayerProperties,ESRI.ArcGIS.Geodatabase.IFeature,ESRI.ArcGIS.Display.IDisplay,ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Carto.IBarrierCollection,ESRI.ArcGIS.Carto.IElement@,ESRI.ArcGIS.Carto.IElement@)">
+      <summary>Labels a feature based on the properties given.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.Maplex.MaplexAnnotateMap">
+      <summary>Labels feature layers in a map.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.Maplex.MaplexAnnotateMapClass">
+      <summary>Labels feature layers in a map.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.Maplex.esriMaplexTextPathType">
+      <summary>Identifies the Maplex text path types.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.Maplex.esriMaplexTextPathType.esriMaplexSimpleTextPath">
+      <summary>A simple text path.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.Maplex.esriMaplexTextPathType.esriMaplexOverposterTextPath">
+      <summary>An overposter text path.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.Maplex.esriMaplexTextPathType.esriMaplexWordTextPath">
+      <summary>A word text path.</summary>
+    </member>
+  </members>
+</doc>
