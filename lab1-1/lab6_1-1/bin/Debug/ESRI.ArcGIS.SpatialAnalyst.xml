@@ -1,0 +1,2072 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>ESRI.ArcGIS.SpatialAnalyst</name>
+  </assembly>
+  <members>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IBitwiseOp">
+      <summary>Provides access to members that control the bitwise operations.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IBitwiseOp.And(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Performs a bitwise 'and' operation on the binary value of two input GeoDatasets.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IBitwiseOp.LeftShift(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Performs a bitwise 'left shift' operation on the binary value of two input GeoDatasets.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IBitwiseOp.Not(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Performs a bitwise 'complement' operation on the binary value of an input GeoDataset.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IBitwiseOp.Or(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Performs a bitwise 'or' operation on the binary value of two input GeoDatasets.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IBitwiseOp.RightShift(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Performs a bitwise 'right shift' operation on the binary value of two input GeoDatasets.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IBitwiseOp.XOr(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Performs a bitwise 'exclusive or' operation on the binary value of two input GeoDatasets.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IConditionalFunctionArguments">
+      <summary>Provides access to members that specify arguments to local raster functions.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IConditionalFunctionArguments.ConditionalRaster">
+      <summary>The 1st raster object, raster dataset or raster variable.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IConditionalFunctionArguments.FalseRaster">
+      <summary>The raster info object describing the output of this function.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IConditionalFunctionArguments.TrueRaster">
+      <summary>The 2nd raster, scalar, raster dataset or raster variable.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IConditionalFunctionArguments.CellsizeType">
+      <summary>The different ways for estimating cellsize.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IConditionalFunctionArguments.ExtentType">
+      <summary>The different ways for estimating extent.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IConditionalFunctionArguments.Operation">
+      <summary>The local function operation.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IConditionalFunctionArguments.RasterInfo">
+      <summary>The raster info object describing the output of this function.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IConditionalOp">
+      <summary>Provides access to members that control the conditional operations.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IConditionalOp.Con(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Object@)">
+      <summary>Performs a conditional if/else evaluation.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IConditionalOp.Pick(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Using the values of 'valueRaster', determines which raster in 'collectionofRasters' will be used for the output values.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IConditionalOp.SetNull(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Returns NoData if the evaluation of the input 'conditionalRaster' is true, or returns the value specified by the 'falseRaster' if it is false, on a cell by cell basis.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IConditionalOp2">
+      <summary>Provides access to members that control the conditional operations.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IConditionalOp2.Con(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Object,System.Object@)">
+      <summary>Performs a conditional if/else evaluation.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IConditionalOp2.Pick(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.esriSystem.IArray)">
+      <summary>Using the values of 'valueRaster', determines which raster in 'collectionofRasters' will be used for the output values.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IConditionalOp2.SetNull(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Object)">
+      <summary>Returns NoData if the evaluation of the input 'conditionalRaster' is true, or returns the value specified by the 'falseRaster' if it is false, on a cell by cell basis.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IDensityOp">
+      <summary>Provides access to members that control the density operations.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IDensityOp.KernelDensity(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Object@,System.Object@)">
+      <summary>Calculates the kernel density of points or lines in a radius around each output cell. A kernel function is used to distribute density values around each point or line.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IDensityOp.LineDensity(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Object@,System.Object@)">
+      <summary>Calculates the simple density of lines in a radius around each output cell. Density is measured as length of lines per unit area.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IDensityOp.PointDensity(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.GeoAnalyst.IRasterNeighborhood,System.Object@)">
+      <summary>Calculates the simple density of points in a neighborhood around each output cell. Density is measured as number of points per unit area.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IDistanceOp">
+      <summary>Provides access to members that control the distance operations.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IDistanceOp.Corridor(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates for each cell location the sum of the accumulative costs for two input accumulative-cost datasets.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IDistanceOp.CostAllocation(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Object@,System.Object@)">
+      <summary>Calculates for each output cell the zone that could be reached with the least accumulative cost.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IDistanceOp.CostBackLink(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Object@,System.Object@)">
+      <summary>Calculates the neighbor that is the next cell on the least-accumulative-cost path from a cell to a source cell.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IDistanceOp.CostDistance(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Object@,System.Object@)">
+      <summary>Calculates for each cell the least-accumulative-cost distance over a cost surface to a source cell or a set of source cells.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IDistanceOp.CostDistanceFull(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Boolean,System.Boolean,System.Boolean,System.Object@,System.Object@)">
+      <summary>Calculates for each cell the least-accumulative-cost distance, backlink, and allocation over a cost surface to a source cell or a set of source cells.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IDistanceOp.CostPath(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisPathEnum)">
+      <summary>Calculates the least-cost path(s) from selected cell(s) in the input data to the closest source cell.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IDistanceOp.CostPathAsPolyline(ESRI.ArcGIS.Geometry.IPointCollection,ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates the least-cost path(s) from selected points in the input data and returns it as a polyline.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IDistanceOp.EucAllocation(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Object@,System.Object@)">
+      <summary>Calculates for each cell the zone of the closest source cell (in Euclidean distance).</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IDistanceOp.EucDirection(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Object@,System.Object@)">
+      <summary>Calculates the direction in degrees from each cell center to the cell center of the closest source.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IDistanceOp.EucDistance(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Object@,System.Object@)">
+      <summary>Calculates for each cell the Euclidean distance to the closest source.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IDistanceOp.EucDistanceFull(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Boolean,System.Boolean,System.Boolean,System.Object@,System.Object@)">
+      <summary>Calculates for each cell optionally the Euclidean distance, direction, and allocation to the closest source.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IDistanceOp2">
+      <summary>Provides access to members that control the distance operations.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IDistanceOp2.Corridor(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates for each cell location the sum of the accumulative costs for two input accumulative-cost datasets.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IDistanceOp2.CostAllocation(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Object@,System.Object@)">
+      <summary>Calculates for each output cell the zone that could be reached with the least accumulative cost.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IDistanceOp2.CostBackLink(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Object@,System.Object@)">
+      <summary>Calculates the neighbor that is the next cell on the least-accumulative-cost path from a cell to a source cell.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IDistanceOp2.CostDistance(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Object@,System.Object@)">
+      <summary>Calculates for each cell the least-accumulative-cost distance over a cost surface to a source cell or a set of source cells.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IDistanceOp2.CostDistanceFull(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Boolean,System.Boolean,System.Boolean,System.Object@,System.Object@)">
+      <summary>Calculates for each cell the least-accumulative-cost distance, backlink, and allocation over a cost surface to a source cell or a set of source cells.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IDistanceOp2.CostPath(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisPathEnum)">
+      <summary>Calculates the least-cost path(s) from selected cell(s) in the input data to the closest source cell.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IDistanceOp2.CostPathAsPolyline(ESRI.ArcGIS.Geometry.IPointCollection,ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates the least-cost path(s) from selected points in the input data and returns it as a polyline.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IDistanceOp2.EucAllocation(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Object@,System.Object@)">
+      <summary>Calculates for each cell the zone of the closest source cell (in Euclidean distance).</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IDistanceOp2.EucDirection(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Object@,System.Object@)">
+      <summary>Calculates the direction in degrees from each cell center to the cell center of the closest source.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IDistanceOp2.EucDistance(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Object@,System.Object@)">
+      <summary>Calculates for each cell the Euclidean distance to the closest source.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IDistanceOp2.EucDistanceFull(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Boolean,System.Boolean,System.Boolean,System.Object@,System.Object@)">
+      <summary>Calculates for each cell optionally the Euclidean distance, direction, and allocation to the closest source.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IDistanceOp2.PathAllocation(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)">
+      <summary>Calculates for each output cell the zone that could be reached with the least accumulative cost.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IDistanceOp2.PathBackLink(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)">
+      <summary>Calculates the neighbor that is the next cell on the least-accumulative-path path from a cell to a source cell.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IDistanceOp2.PathDistance(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)">
+      <summary>Calculates for each cell the least-accumulative-path distance over a path surface to a source cell or a set of source cells.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IDistanceOp2.PathDistanceFull(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Boolean,System.Boolean,System.Boolean,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@,System.Object@)">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IDistanceOp3">
+      <summary>Provides access to members that control the distance operations.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IDistanceOp3.CostPathAsPolyline2(ESRI.ArcGIS.esriSystem.ITrackCancel,ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisPathEnum,ESRI.ArcGIS.Geodatabase.IFeatureClass)">
+      <summary>Calculates the least-cost path(s) from selected cell(s) in the input data to the closest source cell. Generates results as polylines in the specified empty existing fc</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IDistanceOp3.LeastCostPathAsPolyline(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Int32@,System.Double@)">
+      <summary>Calculates the least-cost path(s) from selected points in the input data and returns it as a polyline.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IExtractionOp">
+      <summary>Provides access to members that control the extraction operations.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IExtractionOp.Attribute(ESRI.ArcGIS.GeoAnalyst.IRasterDescriptor)">
+      <summary>Extracts the cells of a raster based on a logical query.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IExtractionOp.Circle(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geometry.ICircularArc,System.Boolean)">
+      <summary>Extracts the cells of a raster based on a circle.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IExtractionOp.Points(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geometry.IPointCollection,System.Boolean)">
+      <summary>Extracts the cells of a raster based on points.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IExtractionOp.Polygon(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geometry.IPolygon,System.Boolean)">
+      <summary>Extracts the cells of a raster based on a polygon.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IExtractionOp.Raster(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Extracts the cells of a raster whose corresponding cells in the mask raster have valid value.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IExtractionOp.Rectangle(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geometry.IEnvelope,System.Boolean)">
+      <summary>Extracts the cells of a raster based on a rectangle.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IExtractionOp.Sample(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.GeoAnalyst.esriGeoAnalysisResampleEnum)">
+      <summary>Extracts the cells of a raster based on a sample.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IExtractionOp2">
+      <summary>Provides access to additional members that control the extraction operations.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IExtractionOp2.Attribute(ESRI.ArcGIS.GeoAnalyst.IRasterDescriptor)">
+      <summary>Extracts the cells of a raster based on a logical query.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IExtractionOp2.Circle(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geometry.ICircularArc,System.Boolean)">
+      <summary>Extracts the cells of a raster based on a circle.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IExtractionOp2.ExtractValuesToPoints(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Boolean,System.Boolean)">
+      <summary>Extracts cell values from point features overlayed on a raster.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IExtractionOp2.Points(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geometry.IPointCollection,System.Boolean)">
+      <summary>Extracts the cells of a raster based on points.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IExtractionOp2.Polygon(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geometry.IPolygon,System.Boolean)">
+      <summary>Extracts the cells of a raster based on a polygon.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IExtractionOp2.Raster(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Extracts the cells of a raster whose corresponding cells in the mask raster have valid value.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IExtractionOp2.Rectangle(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geometry.IEnvelope,System.Boolean)">
+      <summary>Extracts the cells of a raster based on a rectangle.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IExtractionOp2.Sample(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.GeoAnalyst.esriGeoAnalysisResampleEnum)">
+      <summary>Extracts the cells of a raster based on a sample.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGeneralizeOp">
+      <summary>Provides access to members that control the generalization operations.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGeneralizeOp.Aggregate(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Int32,ESRI.ArcGIS.GeoAnalyst.esriGeoAnalysisStatisticsEnum,System.Boolean,System.Boolean)">
+      <summary>Generates a reduced resolution version of a raster.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGeneralizeOp.BoundaryClean(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisSortEnum,System.Boolean)">
+      <summary>Smoothes the boundary between zones by expanding and shrinking the boundary.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGeneralizeOp.Expand(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Int32,System.Object@)">
+      <summary>Expands the selected zones by a specified number of cells.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGeneralizeOp.MajorityFilter(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Boolean,System.Boolean)">
+      <summary>Replaces cells based upon the majority of their contiguous neighboring cells.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGeneralizeOp.Nibble(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Boolean)">
+      <summary>Replaces areas in a raster corresponding to a mask, with the values of the nearest neighbors.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGeneralizeOp.RegionGroup(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Boolean,System.Boolean,System.Boolean,System.Object@)">
+      <summary>Records for each cell in the output, the identity of the connected region to which it belongs.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGeneralizeOp.Resample(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Double,ESRI.ArcGIS.GeoAnalyst.esriGeoAnalysisResampleEnum)">
+      <summary>Resamples the raster to a new cell size.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGeneralizeOp.Shrink(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Int32,System.Object@)">
+      <summary>Shrinks the selected zones by a specified number of cells.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGeneralizeOp.Thin(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Boolean,System.Boolean,System.Boolean,System.Object@)">
+      <summary>Thins rasterized linear features by reducing the number of pixels representing the width of the features.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGeoAnalysisFunctionArguments">
+      <summary>Provides access to members that specify arguments to local raster functions.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGeoAnalysisFunctionArguments.CellsizeType">
+      <summary>The different ways for estimating cellsize.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGeoAnalysisFunctionArguments.ExtentType">
+      <summary>The different ways for estimating extent.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGeoAnalysisFunctionArguments.Operation">
+      <summary>The local function operation.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGeoAnalysisFunctionArguments.RasterInfo">
+      <summary>The raster info object describing the output of this function.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPEvaluationScale">
+      <summary>Provides access to EvaluationScale control for GP Spatial Analyst.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPEvaluationScale.GetScaleList(System.Int32,System.Int32,System.Int32)">
+      <summary>Builds a scale and returns it as a list.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGPEvaluationScale.Increment">
+      <summary>The scale increment.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPEvaluationScale.IsSame(System.Object)">
+      <summary>Verifies whether two scales are identical.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGPEvaluationScale.Restricted">
+      <summary>The restricted value for the current scale.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGPEvaluationScale.ScaleMax">
+      <summary>The maximum scale value.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGPEvaluationScale.ScaleMin">
+      <summary>The minimum scale value.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPEvaluationScaleType">
+      <summary>Provides access to IGPEvaluationScaleType for GP Spatial Analyst.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPRasterCalculatorExpression">
+      <summary>Provides access to the GPRasterCalculatorExpression object for GP Spatial Analyst.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPRasterCalculatorExpressionType">
+      <summary>Provides access to GPRasterCalculatorExpression for GP Spatial Analyst.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSACellSize">
+      <summary>Provides access to cellszie control for GP Spatial Analyst.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSACellSize.GetCellSize(ESRI.ArcGIS.GeoAnalyst.esriRasterEnvSettingEnum@)">
+      <summary>Gets the type and value of cell size in the GP Spatial Analyst.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSACellSize.SetCellSize(ESRI.ArcGIS.GeoAnalyst.esriRasterEnvSettingEnum,System.Object@)">
+      <summary>Sets the type and value of cell size in the GP Spatial Analyst.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSACellSizeType">
+      <summary>Provides access to IGPSACellSizeType for GP Spatial Analyst.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSAExtractValues">
+      <summary>Provides access to the GPSAExtractValues object for GP Spatial Analyst.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSAExtractValuesType">
+      <summary>Provides access to IGPSAExtractValuesType for GP Spatial Analyst.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSAFuzzyFunction">
+      <summary>Provides access to the fuzzy function object used for fuzzy function.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAFuzzyFunction.GetDefaultFuzzyValues(ESRI.ArcGIS.SpatialAnalyst.esriSAFuzzyFunctionEnum,ESRI.ArcGIS.Geodatabase.IGPValue,System.Double@,System.Double@)">
+      <summary>Gets the default values of a fuzzy function</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAFuzzyFunction.SetDefault">
+      <summary>Sets default fuzzy function parameters.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAFuzzyFunction.SetGaussian(System.Double,System.Double)">
+      <summary>Defines a Gaussion fuzzy function.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAFuzzyFunction.SetLarge(System.Double,System.Double)">
+      <summary>Defines a Large fuzzy function.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAFuzzyFunction.SetLinear(System.Double,System.Double)">
+      <summary>Defines a Linear fuzzy function.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAFuzzyFunction.SetMSLarge(System.Int32,System.Int32)">
+      <summary>Defines a MSLarge fuzzy function.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAFuzzyFunction.SetMSSmall(System.Int32,System.Int32)">
+      <summary>Defines a MSSmall fuzzy function.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAFuzzyFunction.SetNear(System.Double,System.Double)">
+      <summary>Defines a Near fuzzy function.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAFuzzyFunction.SetSmall(System.Double,System.Double)">
+      <summary>Defines a Small fuzzy function.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGPSAFuzzyFunction.Type">
+      <summary>type of fuzzy function parameters.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSAFuzzyFunctionType">
+      <summary>Provides access to the fuzzy Function type object for fuzzy Function.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSAHorizontalFactor">
+      <summary>Provides access to the horizontal factor object used for path distance.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAHorizontalFactor.SetBinary(System.Object@,System.Object@)">
+      <summary>Sets a binary horizontal function object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAHorizontalFactor.SetDefault">
+      <summary>Sets a default horizontal function object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAHorizontalFactor.SetForward(System.Object@,System.Object@)">
+      <summary>Sets a forward horizontal function object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAHorizontalFactor.SetInverseLinear(System.Object@,System.Object@,System.Object@)">
+      <summary>Sets a inverse linear horizontal function object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAHorizontalFactor.SetLinear(System.Object@,System.Object@,System.Object@)">
+      <summary>Sets a linear horizontal function object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAHorizontalFactor.SetTable(System.String)">
+      <summary>Sets a table horizontal function object.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGPSAHorizontalFactor.Type">
+      <summary>The type of the horizontal function.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSAHorizontalFactorType">
+      <summary>Provides access to the horizontal factor type object for path distance.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSAMapAlgebraExp">
+      <summary>Provides access to MapAlgebra control for GP Spatial Analyst.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAMapAlgebraExp.GetExpression">
+      <summary>Gets the map algebra expression.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAMapAlgebraExp.SetExpression(System.String)">
+      <summary>Sets the map algebra expression.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSAMapAlgebraExpType">
+      <summary>Provides access to IGPSAMapAlgebraExpType for GP Spatial Analyst.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSANameDomain">
+      <summary>Provides access to The IGPSANameDomain Domain.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGPSANameDomain.AlphaNumericOnly">
+      <summary>AlphaNumeric (+ Underscore) Only.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGPSANameDomain.MaxLength">
+      <summary>MaxLength.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSANameDomain.ValidateValue(System.String)">
+      <summary>Validate value.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSANeighborhood">
+      <summary>Provides access to IGPSANeighborhood interface.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSANeighborhood.SetAnnulus(System.Double,System.Double,ESRI.ArcGIS.GeoAnalyst.esriGeoAnalysisUnitsEnum)">
+      <summary>Sets an annulus neighborhood object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSANeighborhood.SetCircle(System.Double,ESRI.ArcGIS.GeoAnalyst.esriGeoAnalysisUnitsEnum)">
+      <summary>Sets a circle neighborhood object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSANeighborhood.SetDefault">
+      <summary>Sets a default neighborhood object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSANeighborhood.SetHighPassFilter">
+      <summary>Sets a high-pass filter neighborhood of size of 3*3.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSANeighborhood.SetIrregular(System.Int32,System.Int32,System.Object@)">
+      <summary>Sets a neighborhood object each of whose entries can be turned on or off.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSANeighborhood.SetLowPassFilter">
+      <summary>Sets a low-pass filter neighborhood of size of 3*3.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSANeighborhood.SetRectangle(System.Double,System.Double,ESRI.ArcGIS.GeoAnalyst.esriGeoAnalysisUnitsEnum)">
+      <summary>Sets a rectangle neighborhood object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSANeighborhood.SetWedge(System.Double,System.Double,System.Double,ESRI.ArcGIS.GeoAnalyst.esriGeoAnalysisUnitsEnum)">
+      <summary>Sets a wedge neighborhood object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSANeighborhood.SetWeight(System.Int32,System.Int32,System.Object@)">
+      <summary>Sets a neighborhood object each of whose entries can be assigned a weight.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGPSANeighborhood.Type">
+      <summary>The type of the neighborhood.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGPSANeighborhood.TypeOfUnits">
+      <summary>The type of units being used.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSANeighborhood2">
+      <summary>Provides access to IGPSANeighborhood2 interface.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSANeighborhood2.SetAnnulus(System.Double,System.Double,ESRI.ArcGIS.GeoAnalyst.esriGeoAnalysisUnitsEnum)">
+      <summary>Sets an annulus neighborhood object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSANeighborhood2.SetCircle(System.Double,ESRI.ArcGIS.GeoAnalyst.esriGeoAnalysisUnitsEnum)">
+      <summary>Sets a circle neighborhood object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSANeighborhood2.SetDefault">
+      <summary>Sets a default neighborhood object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSANeighborhood2.SetHighPassFilter">
+      <summary>Sets a high-pass filter neighborhood of size of 3*3.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSANeighborhood2.SetIrregular(System.Int32,System.Int32,System.Object@)">
+      <summary>Sets a neighborhood object each of whose entries can be turned on or off.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSANeighborhood2.SetIrregularFile(System.String)">
+      <summary>Sets an irregular neighborhood by a file.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSANeighborhood2.SetLowPassFilter">
+      <summary>Sets a low-pass filter neighborhood of size of 3*3.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSANeighborhood2.SetRectangle(System.Double,System.Double,ESRI.ArcGIS.GeoAnalyst.esriGeoAnalysisUnitsEnum)">
+      <summary>Sets a rectangle neighborhood object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSANeighborhood2.SetWedge(System.Double,System.Double,System.Double,ESRI.ArcGIS.GeoAnalyst.esriGeoAnalysisUnitsEnum)">
+      <summary>Sets a wedge neighborhood object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSANeighborhood2.SetWeight(System.Int32,System.Int32,System.Object@)">
+      <summary>Sets a neighborhood object each of whose entries can be assigned a weight.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSANeighborhood2.SetWeightFile(System.String)">
+      <summary>Sets a weight neighborhood by a file.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGPSANeighborhood2.Type">
+      <summary>The type of the neighborhood.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGPSANeighborhood2.TypeOfUnits">
+      <summary>The type of units being used.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSANeighborhoodDomain">
+      <summary>Provides access to The Neighborhood Domain.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSANeighborhoodDomain.AddType(ESRI.ArcGIS.GeoAnalyst.esriRasterNeighborhoodEnum)">
+      <summary>Add a Neighborhood type.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGPSANeighborhoodDomain.Count">
+      <summary>Count.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSANeighborhoodDomain.RemoveType(ESRI.ArcGIS.GeoAnalyst.esriRasterNeighborhoodEnum)">
+      <summary>Remove a Neighborhood type.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGPSANeighborhoodDomain.Type(System.Int32)">
+      <summary>The Neighborhood type.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSANeighborhoodDomain.ValidateType(ESRI.ArcGIS.GeoAnalyst.esriRasterNeighborhoodEnum)">
+      <summary>Validate an esriRasterNeighborhoodEnum.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSANeighborhoodType">
+      <summary>Provides access to IGPSANeighborhoodType interface.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSANumberRemap">
+      <summary>Provides access to NumberRemap control for GP Spatial Analyst.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSANumberRemap.LoadNumbersFromASCIIFile(System.String)">
+      <summary>Loads the information from an ArcGRID ASCII remap file into a remap object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSANumberRemap.LoadNumbersFromTable(ESRI.ArcGIS.Geodatabase.ITable,System.String,System.String,System.Object,System.Object)">
+      <summary>Load number remap records from a table object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSANumberRemap.MapRange(System.Double,System.Double,System.Int32)">
+      <summary>Maps a range entry to the remap object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSANumberRemap.MapRangeToNoData(System.Double,System.Double)">
+      <summary>Maps a range entry to nodata.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSANumberRemap.MapValue(System.Double,System.Int32)">
+      <summary>Maps a single value entry to the remap object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSANumberRemap.MapValueToNoData(System.Double)">
+      <summary>Maps a single value entry to nodata.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSANumberRemap.QueryNumberRecord(System.Int32,System.Double@,System.Double@,System.Int32@,System.Boolean@)">
+      <summary>Returns number record information by index.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSANumberRemap.QueryNumberValue(System.Double,System.Int32@,System.Boolean@)">
+      <summary>Returns the mapped value for a number remap entry.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSANumberRemapType">
+      <summary>Provides access to IGPSANumberRemapType for GP Spatial Analyst.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSARadius">
+      <summary>Provides access to IGPSARadius interface.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSARadius.SetFixed(System.Double,System.Object@)">
+      <summary>Defines a fixed radius.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSARadius.SetVariable(System.Int32,System.Object@)">
+      <summary>Defines a variable radius.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGPSARadius.Type">
+      <summary>The type of radius.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSARadiusType">
+      <summary>Provides access to IGPSARadiusType interface.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSARemap">
+      <summary>Provides access to Remap control for GP Spatial Analyst.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSARemap.Clear">
+      <summary>Clears the remap object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSARemap.DeleteRecord(System.Int32)">
+      <summary>Deletes a remap record by index.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSARemap.HasValueToNoData">
+      <summary>Returns whether any record is mapped to nodata.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSARemap.LoadFromTable(ESRI.ArcGIS.Geodatabase.ITable)">
+      <summary>Loads remap records from an ITable and creates the relevant remap object.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGPSARemap.MinOutputValue">
+      <summary>The minimum output value.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGPSARemap.NoDataTo">
+      <summary>The nodata value.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSARemap.QueryNoDataTo(System.Boolean@,System.Int32@)">
+      <summary>Returns whether nodata is mapped and if so, the mapped value.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSARemap.QueryRecord(System.Int32,System.String@,System.String@)">
+      <summary>Returns info for a remap record by index.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGPSARemap.RecordCount">
+      <summary>The number of remap records.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGPSARemap.Remap">
+      <summary>The remap.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSARemap.RepresentAsTable">
+      <summary>Stores the remap records in an ITable.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSARemap.SaveAsTable(System.String)">
+      <summary>Saves the remap records to a table.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSARemap.Validate(System.Boolean@,System.String@)">
+      <summary>Validates the remap records.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSARemapDomain">
+      <summary>Provides access to the Remap Domain.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSARemapDomain.AddType(ESRI.ArcGIS.SpatialAnalyst.esriGPSARemapTypeEnum)">
+      <summary>Add a Remap type.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGPSARemapDomain.Count">
+      <summary>Number of Remap types.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSARemapDomain.RemoveType(ESRI.ArcGIS.SpatialAnalyst.esriGPSARemapTypeEnum)">
+      <summary>Remove a Remap type.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGPSARemapDomain.Type(System.Int32)">
+      <summary>Remap type.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSARemapDomain.ValidateType(ESRI.ArcGIS.SpatialAnalyst.esriGPSARemapTypeEnum)">
+      <summary>Validate a Remap type.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSARemapType">
+      <summary>Provides access to IGPSARemapType for GP Spatial Analyst.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSASemiVariogram">
+      <summary>Provides access to Interpolation semi-variogram control for GP Spatial Analyst.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSASemiVariogram.DefineVariogram(ESRI.ArcGIS.GeoAnalyst.esriGeoAnalysisSemiVariogramEnum,System.Double,System.Double,System.Double)">
+      <summary>Define Variogram.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGPSASemiVariogram.Lag">
+      <summary>Lag value.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGPSASemiVariogram.Nugget">
+      <summary>Nugget value.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGPSASemiVariogram.PartialSill">
+      <summary>Partial Sill value.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGPSASemiVariogram.Range">
+      <summary>Range value.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGPSASemiVariogram.SemiVariogram">
+      <summary>GeoAnalysis semi-variogram.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGPSASemiVariogram.VariogramType">
+      <summary>Variogram Type.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSASemiVariogramType">
+      <summary>Provides access to IGPSASemiVariogramType for GP Spatial Analyst.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSAStringRemap">
+      <summary>Provides access to StringRemap control for GP Spatial Analyst.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAStringRemap.LoadStringsFromTable(ESRI.ArcGIS.Geodatabase.ITable,System.String,System.String,System.Object)">
+      <summary>Loads string remap records from a table object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAStringRemap.MapString(System.String,System.Int32)">
+      <summary>Maps a string entry to the remap object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAStringRemap.MapStringToNoData(System.String)">
+      <summary>Maps a string entry to nodata.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAStringRemap.QueryStringRecord(System.Int32,System.String@,System.Int32@,System.Boolean@)">
+      <summary>Returns string record information by index.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAStringRemap.QueryStringValue(System.String,System.Int32@,System.Boolean@)">
+      <summary>Returns the mapped value for a string remap entry.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSAStringRemapType">
+      <summary>Provides access to IGPSAStringRemapType for GP Spatial Analyst.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSATextTableNameDomain">
+      <summary>Provides access to The IGPSATextTableNameDomain Domain.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGPSATextTableNameDomain.Extension">
+      <summary>Extension.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSATimeConfiguration">
+      <summary>Provides access to the time configuration object used for solar radiation.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSATimeConfiguration.SetDefault">
+      <summary>Sets default time configuration parameters.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSATimeConfiguration.SetMultiDays(System.Int32,System.Int32,System.Int32)">
+      <summary>Sets Multi-Days in time configuration parameters.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSATimeConfiguration.SetSpecialDays">
+      <summary>Sets Special-Days in time configuration parameters.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSATimeConfiguration.SetWholeYear(System.Int32)">
+      <summary>Sets Whole-Year in time configuration parameters.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSATimeConfiguration.SetWithinDay(System.Int32,System.Double,System.Double)">
+      <summary>Sets Within-Day in time configuration parameters.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGPSATimeConfiguration.Type">
+      <summary>Time configuration type of time configuration parameters.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSATimeConfigurationType">
+      <summary>Provides access to the time configuration type object for solar radiation.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSATopoFeatures">
+      <summary>Provides access to TopoFeatures object for GP Spatial Analyst.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSATopoFeatures.GetDefaultOutputName">
+      <summary>Gets a default output name.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSATopoFeatures.GetFeatureArray(ESRI.ArcGIS.SpatialAnalyst.esriGPSATopoTypeEnum)">
+      <summary>Gets an array of TopoToRaster features for a layer type.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSATopoFeatures.GetFeatureInfo(System.Int32,System.String@,System.String@,System.String@)">
+      <summary>Gets an array of TopoToRaster feature GP features for a layer type.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSATopoFeaturesType">
+      <summary>Provides access to IGPSATopoFeaturesType for GP Spatial Analyst.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSATransformationFunction">
+      <summary>Provides access to the transformation function object used for transformation function.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSATransformationFunction.GetDefaultTransformationValues(ESRI.ArcGIS.SpatialAnalyst.esriSATransformationFunctionEnum,System.String,System.Double,System.Double,System.Boolean,ESRI.ArcGIS.Geoprocessing.IGPEnvironmentManager,System.Double@,System.Object@,System.Double@,System.Object@,System.Double@,System.Double@,System.Double@,System.String@)">
+      <summary>Gets the default values of a transformation function</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSATransformationFunction.SetCustom(System.String,System.Object,System.Object,System.Object,System.Object,ESRI.ArcGIS.Geodatabase.IGPMessage@)">
+      <summary>Defines a custom transformation function.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSATransformationFunction.SetDefault">
+      <summary>Sets default transformation function parameters.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSATransformationFunction.SetExponential(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,ESRI.ArcGIS.Geodatabase.IGPMessage@)">
+      <summary>Defines a Exponential transformation function.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSATransformationFunction.SetGaussian(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,ESRI.ArcGIS.Geodatabase.IGPMessage@)">
+      <summary>Defines a Gaussion transformation function.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSATransformationFunction.SetLarge(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,ESRI.ArcGIS.Geodatabase.IGPMessage@)">
+      <summary>Defines a Large transformation function.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSATransformationFunction.SetLinear(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,ESRI.ArcGIS.Geodatabase.IGPMessage@)">
+      <summary>Defines a Linear transformation function.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSATransformationFunction.SetLogarithm(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,ESRI.ArcGIS.Geodatabase.IGPMessage@)">
+      <summary>Defines a Logarithm transformation function.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSATransformationFunction.SetLogisticDecay(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,ESRI.ArcGIS.Geodatabase.IGPMessage@)">
+      <summary>Defines a Logistic Decay transformation function.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSATransformationFunction.SetLogisticGrowth(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,ESRI.ArcGIS.Geodatabase.IGPMessage@)">
+      <summary>Defines a Logistic Growth transformation function.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSATransformationFunction.SetMSLarge(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,ESRI.ArcGIS.Geodatabase.IGPMessage@)">
+      <summary>Defines a MSLarge transformation function.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSATransformationFunction.SetMSSmall(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,ESRI.ArcGIS.Geodatabase.IGPMessage@)">
+      <summary>Defines a MSSmall transformation function.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSATransformationFunction.SetNear(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,ESRI.ArcGIS.Geodatabase.IGPMessage@)">
+      <summary>Defines a Near transformation function.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSATransformationFunction.SetPower(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,ESRI.ArcGIS.Geodatabase.IGPMessage@)">
+      <summary>Defines a Power transformation function.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSATransformationFunction.SetSmall(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,ESRI.ArcGIS.Geodatabase.IGPMessage@)">
+      <summary>Defines a Small transformation function.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSATransformationFunction.SetSymmetricLinear(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,ESRI.ArcGIS.Geodatabase.IGPMessage@)">
+      <summary>Defines a Symetric Linear transformation function.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGPSATransformationFunction.Type">
+      <summary>type of transformation function parameters.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSATransformationFunctionType">
+      <summary>Provides access to the transformation Function type object for transformation function.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSAUtil">
+      <summary>Provides access to IGPSAUtil interface.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAUtil.GetAPrioriEnum(System.String)">
+      <summary>Gets the Apriori Enum.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAUtil.GetCodedValueDomainFromRemap(ESRI.ArcGIS.Geodatabase.IGPValue)">
+      <summary>Gets a CodedValueDomain From Remap.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAUtil.GetCostPathEnum(System.String)">
+      <summary>Gets Cost Path Enum.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAUtil.GetFilterEnum(System.String)">
+      <summary>Gets Filter Enum.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAUtil.GetRemapFromCodedValueDomain(ESRI.ArcGIS.Geodatabase.ICodedValueDomain,ESRI.ArcGIS.SpatialAnalyst.IGPEvaluationScale)">
+      <summary>Gets Remap From a CodedValueDomain.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAUtil.GetSemiVariogramEnum(System.String)">
+      <summary>Gets SemiVariogram Enum.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAUtil.GetSliceEnum(System.String)">
+      <summary>Gets Slice Enum.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAUtil.GetSlopeEnum(System.String)">
+      <summary>Gets Slope Enum.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAUtil.GetSortEnum(System.String)">
+      <summary>Gets Sort Enum.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAUtil.GetSplineEnum(System.String)">
+      <summary>Gets spline Enum.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAUtil.GetStatisticsEnum(System.String,System.Boolean)">
+      <summary>Gets Statistics Enum.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAUtil.GetStreamOrderEnum(System.String)">
+      <summary>Gets Stream Order Enum.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAUtil.GetTopoFeatureEnum(System.String)">
+      <summary>Gets the TopoFeature Enum.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAUtil.GetTopoFeatureName(ESRI.ArcGIS.SpatialAnalyst.esriGPSATopoTypeEnum)">
+      <summary>Gets the TopoFeature Name.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAUtil.GetTrendEnum(System.String)">
+      <summary>Gets Trend Enum.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAUtil.GetVisibilityEnum(System.String)">
+      <summary>Gets Visibility Enum.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAUtil.GetZonalGeometryEnum(System.String)">
+      <summary>Gets Zonal Geometry Enum.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAUtil.SetStatisticsDomain(System.Boolean,ESRI.ArcGIS.Geodatabase.IGPCodedValueDomain)">
+      <summary>Sets a statistics domain.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSAVerticalFactor">
+      <summary>Provides access to the vertical factor object for path distance.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAVerticalFactor.SetBinary(System.Object@,System.Object@,System.Object@)">
+      <summary>Sets a binary vertical function object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAVerticalFactor.SetCos(System.Object@,System.Object@,System.Object@)">
+      <summary>Sets a Cos vertical function object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAVerticalFactor.SetCosSec(System.Object@,System.Object@,System.Object@,System.Object@)">
+      <summary>Sets a negative-Cos and positive-Sec vertical function object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAVerticalFactor.SetDefault">
+      <summary>Sets a default vertical function object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAVerticalFactor.SetInverseLinear(System.Object@,System.Object@,System.Object@,System.Object@)">
+      <summary>Sets a inverse linear vertical function object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAVerticalFactor.SetLinear(System.Object@,System.Object@,System.Object@,System.Object@)">
+      <summary>Sets a linear vertical function object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAVerticalFactor.SetSec(System.Object@,System.Object@,System.Object@)">
+      <summary>Sets a Sec vertical function object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAVerticalFactor.SetSecCos(System.Object@,System.Object@,System.Object@,System.Object@)">
+      <summary>Sets a negative-Cos and positive-Sec vertical function object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAVerticalFactor.SetSymInverseLinear(System.Object@,System.Object@,System.Object@,System.Object@)">
+      <summary>Sets a symmetrical-inverse-linear vertical function object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAVerticalFactor.SetSymLinear(System.Object@,System.Object@,System.Object@,System.Object@)">
+      <summary>Sets a symmetrical-linear vertical function object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAVerticalFactor.SetTable(System.String)">
+      <summary>Sets a table vertical function object.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGPSAVerticalFactor.Type">
+      <summary>The type of the vertical function.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSAVerticalFactorType">
+      <summary>Provides access to the vertical factor type object for path distance.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSAWeightedOverlayTable">
+      <summary>Provides access to WeightedOverlayTable control for GP Spatial Analyst.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAWeightedOverlayTable.AddRecord(ESRI.ArcGIS.Geodatabase.IGPValue,ESRI.ArcGIS.Geodatabase.IGPValue)">
+      <summary>Adds a record to the overlay table.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAWeightedOverlayTable.Clear">
+      <summary>Clears the overlay table.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGPSAWeightedOverlayTable.Count">
+      <summary>The number of records in the overlay table.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAWeightedOverlayTable.DeleteRecord(System.Int32)">
+      <summary>Removes a record from the overlay table.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAWeightedOverlayTable.GetEvaluationScale">
+      <summary>Get the evaluation scale used by the overlay table.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAWeightedOverlayTable.GetValue(System.Int32,System.Int32)">
+      <summary>Returns a column value from the overlay table.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAWeightedOverlayTable.SetValue(System.Int32,System.Int32,ESRI.ArcGIS.Geodatabase.IGPValue)">
+      <summary>Sets a column value in the overlay table.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IGPSAWeightedOverlayTable.SumOfInfluences">
+      <summary>The sum of percent influences of all elements in the overlay table.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGPSAWeightedOverlayTable.Transform(ESRI.ArcGIS.SpatialAnalyst.IGPEvaluationScale,ESRI.ArcGIS.SpatialAnalyst.IGPEvaluationScale)">
+      <summary>Performs a transform between the current and previous scale lists.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSAWeightedOverlayTableType">
+      <summary>Provides access to IGPSAWeightedOverlayTableType for GP Spatial Analyst.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSAWeightedSum">
+      <summary>Provides access to the WeightedSum object for GP Spatial Analyst.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGPSAWeightedSumType">
+      <summary>Provides access to IGPSAWeightedSumType for GP Spatial Analyst.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IGroundwaterOp">
+      <summary>Provides access to members that perform groundwater analysis on raster data.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGroundwaterOp.DarcyFlow(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Boolean,System.Boolean)">
+      <summary>Calculates the groundwater volume balance residual and other outputs for steady flow in an aquifer.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGroundwaterOp.DarcyVelocity(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates the groundwater seepage velocity vector (direction and magnitude) for steady flow in an aquifer.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGroundwaterOp.ParticleTrack(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geometry.IPoint,System.String,System.Object,System.Object)">
+      <summary>Calculates the path of a particle through a velocity field.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IGroundwaterOp.PorousPuff(System.String,ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Double,System.Object,System.Object,System.Object,System.Object,System.Object)">
+      <summary>Calculates the time-dependent, two-dimensional concentration distribution in mass per volume of a solute introduced instantaneously and at a discrete point into a vertically mixed aquifer.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IHydrologyOp">
+      <summary>Provides access to members that control the hydrological operations.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IHydrologyOp.Basin(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Creates a raster delineating all drainage basins.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IHydrologyOp.Fill(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Object@)">
+      <summary>Fills sinks in a surface to remove small imperfections in the data.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IHydrologyOp.FlowAccumulation(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Object@)">
+      <summary>Creates a raster of accumulated flow to each cell.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IHydrologyOp.FlowDirection(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Boolean,System.Boolean)">
+      <summary>Creates a raster of flow direction from each cell to it's steepest downslope neighbor.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IHydrologyOp.FlowLength(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Boolean,System.Object@)">
+      <summary>Calculates distance, or weighted distance along a flow path.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IHydrologyOp.Sink(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Creates a raster identifying all sinks, or areas of internal drainage.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IHydrologyOp.SnapPourPoint(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Double)">
+      <summary>Snaps selected pour points to the cell of highest flow accumulation within a specified distance.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IHydrologyOp.StreamLink(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Assigns unique values to sections of a raster linear network between intersections.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IHydrologyOp.StreamOrder(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisStreamOrderEnum)">
+      <summary>Assigns a numeric order to segments of a raster representing branches of a linear network.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IHydrologyOp.StreamToFeature(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Boolean)">
+      <summary>Converts a raster representing a linear network to features representing the linear network.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IHydrologyOp.Watershed(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Determines the contributing area above a set of cells in a raster.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IHydrologyOp2">
+      <summary>Provides access to additional members that control the hydrological operations.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IHydrologyOp2.Basin(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Creates a raster delineating all drainage basins.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IHydrologyOp2.Fill(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Object@)">
+      <summary>Fills sinks in a surface to remove small imperfections in the data.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IHydrologyOp2.FlowAccumulation(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Object@)">
+      <summary>Creates a raster of accumulated flow to each cell.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IHydrologyOp2.FlowAccumulationInt(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Object@)">
+      <summary>Creates an integer raster of accumulated flow to each cell.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IHydrologyOp2.FlowDirection(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Boolean,System.Boolean)">
+      <summary>Creates a raster of flow direction from each cell to it's steepest downslope neighbor.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IHydrologyOp2.FlowLength(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Boolean,System.Object@)">
+      <summary>Calculates distance, or weighted distance along a flow path.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IHydrologyOp2.Sink(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Creates a raster identifying all sinks, or areas of internal drainage.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IHydrologyOp2.SnapPourPoint(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Double)">
+      <summary>Snaps selected pour points to the cell of highest flow accumulation within a specified distance.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IHydrologyOp2.StreamLink(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Assigns unique values to sections of a raster linear network between intersections.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IHydrologyOp2.StreamOrder(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisStreamOrderEnum)">
+      <summary>Assigns a numeric order to segments of a raster representing branches of a linear network.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IHydrologyOp2.StreamToFeature(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Boolean)">
+      <summary>Converts a raster representing a linear network to features representing the linear network.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IHydrologyOp2.Watershed(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Determines the contributing area above a set of cells in a raster.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.ILocalFunctionArguments">
+      <summary>Provides access to members that specify arguments to local raster functions.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.ILocalFunctionArguments.Rasters">
+      <summary>An array of rasters to be processed by this local function. This overrides the raster/raster2 properties.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.ILocalFunctionArguments.CellsizeType">
+      <summary>The different ways for estimating cellsize.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.ILocalFunctionArguments.ExtentType">
+      <summary>The different ways for estimating extent.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.ILocalFunctionArguments.Operation">
+      <summary>The local function operation.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.ILocalFunctionArguments.RasterInfo">
+      <summary>The raster info object describing the output of this function.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.ILocalOp">
+      <summary>Provides access to members that control the local statistical analysis operations.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ILocalOp.Combine(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Combines the Local GeoDatasets.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ILocalOp.EqualTo(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates the local equal-to values between GeoDatasets.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ILocalOp.GreaterThan(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates the local greater-than values between GeoDatasets.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ILocalOp.HighestPosition(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates the local highest position within GeoDatasets.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ILocalOp.LessThan(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates the local less-than values between GeoDatasets.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ILocalOp.LocalStatistics(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.GeoAnalyst.esriGeoAnalysisStatisticsEnum)">
+      <summary>Calculates the local statistics of the GeoDataset.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ILocalOp.LowestPosition(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates the local lowest position within GeoDatasets.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ILocalOp.Popularity(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates the local popularity between GeoDatasets.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ILocalOp.Rank(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates the local rank between GeoDatasets.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.ILogicalOp">
+      <summary>Provides access to members that control the logical operations.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ILogicalOp.BooleanAnd(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Performs a boolean 'and' operation on two input rasters.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ILogicalOp.BooleanNot(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Perorms a boolean 'complement' operation on two input rasters.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ILogicalOp.BooleanOr(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Performs a boolean 'or' operation on two input rasters.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ILogicalOp.BooleanXOr(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Performs a boolean 'exclusive or' operation on two input rasters.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ILogicalOp.CombinatorialAnd(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Performs a combinatorial 'and' operation on two input rasters.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ILogicalOp.CombinatorialOr(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Performs a combinatorial 'or' operation on two input rasters.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ILogicalOp.CombinatorialXOr(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Performs a combinatorial 'exclusive or' operation on two input rasters.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ILogicalOp.EqualTo(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Returns 1 for cells where the first raster equals than the second raster.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ILogicalOp.GreaterThan(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Returns 1 for cells where the first raster is greater than the second raster.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ILogicalOp.GreaterThanEqual(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Returns 1 for cells where the first raster is greater than or equal to the second raster.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ILogicalOp.IsNull(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>On a cell by cell basis, returns 1 if the input value is NoData, and 0 if it is not.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ILogicalOp.LessThan(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Returns 1 for cells where the first raster is less than the second raster.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ILogicalOp.LessThanEqual(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Returns 1 for cells where the first raster less than or equal to the second raster.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ILogicalOp.NotEqual(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Returns 1 for cells where the first raster is not equal to the second raster.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ILogicalOp.Test(ESRI.ArcGIS.GeoAnalyst.IRasterDescriptor)">
+      <summary>Sets the output to 1 or 0 on a cell-by-cell basis based on evaluation of a boolean logical expression.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.ILogicalOp2">
+      <summary>Provides access to members that control the logical operations.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ILogicalOp2.CombinatorialAnd(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Performs a combinatorial 'and' operation on two input rasters.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ILogicalOp2.CombinatorialOr(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Performs a combinatorial 'or' operation on two input rasters.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ILogicalOp2.CombinatorialXOr(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Performs a combinatorial 'exclusive or' operation on two input rasters.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ILogicalOp2.Test(ESRI.ArcGIS.GeoAnalyst.IRasterDescriptor)">
+      <summary>Sets the output to 1 or 0 on a cell-by-cell basis based on evaluation of a boolean logical expression.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.ILogicalOperatorOp">
+      <summary>Provides access to members that control the logical operator operations.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ILogicalOperatorOp.Diff(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Determines which values from the first input are logically different from the values of the second.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ILogicalOperatorOp.InList(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Determines which values from the first input are contained in list of geodata in the second input.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ILogicalOperatorOp.Over(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Returns those values from the first input that are nonzero; otherwise, returns the value from the second.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.ILogicalOperatorOp2">
+      <summary>Provides access to members that control the logical operator operations.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ILogicalOperatorOp2.InList(System.Object,ESRI.ArcGIS.esriSystem.IArray)">
+      <summary>Determines which values from the first input are contained in list of geodata in the second input.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IMapAlgebraOp">
+      <summary>Provides access to members that control the MapAlgebra operations.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IMapAlgebraOp.BindRaster(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.String)">
+      <summary>Binds a symbol to a GeoDataset.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IMapAlgebraOp.Execute(System.String)">
+      <summary>Produces a GeoDataset by executing an expression.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IMapAlgebraOp.UnbindRaster(System.String)">
+      <summary>Unbind a symbol.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IMathFunctionArguments">
+      <summary>Provides access to members that specify arguments to local raster functions.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IMathFunctionArguments.Raster">
+      <summary>The 1st raster object, raster dataset or raster variable.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IMathFunctionArguments.Raster2">
+      <summary>The 2nd raster, scalar, raster dataset or raster variable.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IMathFunctionArguments.CellsizeType">
+      <summary>The different ways for estimating cellsize.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IMathFunctionArguments.ExtentType">
+      <summary>The different ways for estimating extent.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IMathFunctionArguments.Operation">
+      <summary>The local function operation.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IMathFunctionArguments.RasterInfo">
+      <summary>The raster info object describing the output of this function.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IMathOp">
+      <summary>Provides access to members that control the mathematical operations.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IMathOp.Abs(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates the absolute value of cells in a raster.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IMathOp.Divide(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Divides the values of two inputs.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IMathOp.Exp(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates the base e exponential of cells in a raster.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IMathOp.Exp10(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates the base 10 exponential of cells in a raster.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IMathOp.Exp2(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates the base 2 exponential of cells in a raster.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IMathOp.Float(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Converts a raster into floating point representation.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IMathOp.Int(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Converts a raster to integer by truncation.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IMathOp.Ln(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates the natural logarithm (base e) of cells in a raster.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IMathOp.Log10(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates the base 10 logarithm of cells in a raster.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IMathOp.Log2(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates the base 2 logarithm of cells in a raster.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IMathOp.Minus(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Subtracts the values of two inputs.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IMathOp.Mod(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Finds the remainder of the first input when divided by the second.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IMathOp.Negate(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Changes the sign of the input raster (multiplies by -1).</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IMathOp.Plus(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Adds the values of two inputs.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IMathOp.Power(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Double)">
+      <summary>Raises the cells in a raster to the Nth power.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IMathOp.PowerByCellValue(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Raises the cells in a raster to the power of values found in another raster.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IMathOp.RoundDown(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Returns the next lower whole number for each cell in a raster.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IMathOp.RoundUp(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Returns the next higher whole number for each cell in a raster.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IMathOp.Square(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates the square of cells in a raster.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IMathOp.SquareRoot(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates the square root of cells in a raster.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IMathOp.Times(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Multiplies the values of two inputs.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IMultivariateOp">
+      <summary>Provides access to members that perform multivariate analysis on raster data.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IMultivariateOp.BandCollectionStats(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.String,System.Boolean)">
+      <summary>Calculates the statistics for a raster band collection.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IMultivariateOp.ClassProbability(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.String,ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisAPrioriEnum,System.Object,System.Object)">
+      <summary>Creates probability layers, for each class in the signature file.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IMultivariateOp.CreateSignatures(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,System.String,System.Boolean)">
+      <summary>Creates an ascii signature file of classes defined in an input dataset.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IMultivariateOp.Dendrogram(System.String,System.String,System.Boolean,System.Object)">
+      <summary>Constructs a tree diagram showing attribute distances between sequentially merged classes in a signature file.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IMultivariateOp.EditSignatures(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.String,System.String,System.String,System.Object)">
+      <summary>Edits and updates a signature file.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IMultivariateOp.IsoCluster(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.String,System.Int32,System.Object,System.Object,System.Object)">
+      <summary>Uses isodata clustering to get characteristics of natural cell groupings in multi-dimension attribute space.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IMultivariateOp.MLClassify(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.String,System.Boolean,ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisAPrioriEnum,System.Object,System.Object)">
+      <summary>Performs a maximum-likelihood classification on a raster band collection.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IMultivariateOp.PrincipalComponents(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.String,System.Object)">
+      <summary>Performs principal components analysis on a raster band collection.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.INeighborhoodOp">
+      <summary>Provides access to members that control the neighborhood operations.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.INeighborhoodOp.BlockStatistics(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.GeoAnalyst.esriGeoAnalysisStatisticsEnum,ESRI.ArcGIS.GeoAnalyst.IRasterNeighborhood,System.Boolean)">
+      <summary>Calculates statistics for a non-overlapping neighborhood.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.INeighborhoodOp.Filter(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.GeoAnalyst.esriGeoAnalysisFilterEnum,System.Boolean)">
+      <summary>Performs a preset focal filter on the input.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.INeighborhoodOp.FocalFlow(ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Object@)">
+      <summary>Calculates the flow of the values in the surface within each cells immediate neighborhood.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.INeighborhoodOp.FocalStatistics(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.GeoAnalyst.esriGeoAnalysisStatisticsEnum,ESRI.ArcGIS.GeoAnalyst.IRasterNeighborhood,System.Boolean)">
+      <summary>Calculates statistics for an overlapping neighborhood.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.INeighborhoodOp.LineStatistics(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.GeoAnalyst.esriGeoAnalysisStatisticsEnum,System.Double)">
+      <summary>Calculates a statistic on the attributes of lines in a circular neighborhood around each output cell.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.INeighborhoodOp.PointStatistics(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.GeoAnalyst.esriGeoAnalysisStatisticsEnum,ESRI.ArcGIS.GeoAnalyst.IRasterNeighborhood)">
+      <summary>Calculates a statistic on the points in a neighborhood around each output cell.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IPathDistanceHorizontalFactor">
+      <summary>Provides access to members that control the horizontal facors used when performing path distance.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IPathDistanceHorizontalFactor.Description">
+      <summary>The string description of the horizontal function.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IPathDistanceHorizontalFactor.SetBinary(System.Object@,System.Object@)">
+      <summary>Sets a binary horizontal function object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IPathDistanceHorizontalFactor.SetDefault">
+      <summary>Sets a default horizontal function object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IPathDistanceHorizontalFactor.SetForward(System.Object@,System.Object@)">
+      <summary>Sets a forward horizontal function object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IPathDistanceHorizontalFactor.SetInverseLinear(System.Object@,System.Object@,System.Object@)">
+      <summary>Sets a inverse linear horizontal function object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IPathDistanceHorizontalFactor.SetLinear(System.Object@,System.Object@,System.Object@)">
+      <summary>Sets a linear horizontal function object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IPathDistanceHorizontalFactor.SetTable(System.String)">
+      <summary>Sets a table horizontal function object.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IPathDistanceHorizontalFactor.Type">
+      <summary>The type of the horizontal function.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IPathDistanceVerticalFactor">
+      <summary>Provides access to members that control the vertical factors used when performing path distance.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IPathDistanceVerticalFactor.Description">
+      <summary>The string description of the vertical function.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IPathDistanceVerticalFactor.SetBinary(System.Object@,System.Object@,System.Object@)">
+      <summary>Sets a binary vertical function object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IPathDistanceVerticalFactor.SetCos(System.Object@,System.Object@,System.Object@)">
+      <summary>Sets a Cos vertical function object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IPathDistanceVerticalFactor.SetCosSec(System.Object@,System.Object@,System.Object@,System.Object@)">
+      <summary>Sets a negative-Cos and positive-Sec vertical function object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IPathDistanceVerticalFactor.SetDefault">
+      <summary>Sets a default vertical function object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IPathDistanceVerticalFactor.SetInverseLinear(System.Object@,System.Object@,System.Object@,System.Object@)">
+      <summary>Sets a inverse linear vertical function object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IPathDistanceVerticalFactor.SetLinear(System.Object@,System.Object@,System.Object@,System.Object@)">
+      <summary>Sets a linear vertical function object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IPathDistanceVerticalFactor.SetSec(System.Object@,System.Object@,System.Object@)">
+      <summary>Sets a Sec vertical function object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IPathDistanceVerticalFactor.SetSecCos(System.Object@,System.Object@,System.Object@,System.Object@)">
+      <summary>Sets a negative-Cos and positive-Sec vertical function object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IPathDistanceVerticalFactor.SetSymInverseLinear(System.Object@,System.Object@,System.Object@,System.Object@)">
+      <summary>Sets a symmetrical-inverse-linear vertical function object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IPathDistanceVerticalFactor.SetSymLinear(System.Object@,System.Object@,System.Object@,System.Object@)">
+      <summary>Sets a symmetrical-linear vertical function object.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IPathDistanceVerticalFactor.SetTable(System.String)">
+      <summary>Sets a table vertical function object.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IPathDistanceVerticalFactor.Type">
+      <summary>The type of the vertical function.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.ITrigOp">
+      <summary>Provides access to members that control the trigonometry operations.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ITrigOp.ACos(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates the inverse cosine of cells in a GeoDataset.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ITrigOp.ACosH(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates the inverse hyperbolic cosine of cells in a GeoDataset.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ITrigOp.ASin(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates the inverse sine of cells in a GeoDataset.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ITrigOp.ASinH(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates the inverse hyperbolic sine of cells in a GeoDataset.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ITrigOp.ATan(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates the inverse tangent of cells in a GeoDataset.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ITrigOp.ATan2(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates the calculates the inverse tangent (based on x/y) of cells in a GeoDataset.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ITrigOp.ATanH(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates the inverse hyperbolic tangent of cells in a GeoDataset.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ITrigOp.Cos(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates the cosine of cells in a GeoDataset.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ITrigOp.CosH(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates the hyperbolic cosine of cells in a GeoDataset.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ITrigOp.Sin(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates the sine of cells in a GeoDataset.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ITrigOp.SinH(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates the hyperbolic sine of cells in a GeoDataset.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ITrigOp.Tan(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates the tangent of cells in a GeoDataset.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.ITrigOp.TanH(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates the hyperbolic tangent of cells in a GeoDataset.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IWeightedOverlayFunctionArguments">
+      <summary>Provides access to members that setup a weighted overlay raster reduction.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IWeightedOverlayFunctionArguments.CellsizeType">
+      <summary>The different ways for estimating cellsize.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IWeightedOverlayFunctionArguments.EvalFrom">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IWeightedOverlayFunctionArguments.EvalTo">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IWeightedOverlayFunctionArguments.ExtentType">
+      <summary>The different ways for estimating extent.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IWeightedOverlayFunctionArguments.Fields">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IWeightedOverlayFunctionArguments.Influences">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IWeightedOverlayFunctionArguments.Rasters">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IWeightedOverlayFunctionArguments.Remaps">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IWeightedSumFunctionArguments">
+      <summary>Provides access to members that setup a weighted sum raster reduction.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IWeightedSumFunctionArguments.CellsizeType">
+      <summary>The different ways for estimating cellsize.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IWeightedSumFunctionArguments.ExtentType">
+      <summary>The different ways for estimating extent.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IWeightedSumFunctionArguments.Fields">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IWeightedSumFunctionArguments.Rasters">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.SpatialAnalyst.IWeightedSumFunctionArguments.Weights">
+      <summary>See the ESRI SDK Help.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.IZonalOp">
+      <summary>Provides access to members that control the zonal analysis operations.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IZonalOp.TabulateArea(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates cross tabulated areas between two datasets.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IZonalOp.ZonalFill(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Fills zones using the minimum cell value from the 'weightRaster', along the zone boundary.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IZonalOp.ZonalGeometry(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisZonalGeometryEnum)">
+      <summary>Calculates for each zone of the input zone Dataset the specified geometry measure.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IZonalOp.ZonalGeometryAsTable(ESRI.ArcGIS.Geodatabase.IGeoDataset)">
+      <summary>Calculates all geometry characteristics for each zone in a table.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IZonalOp.ZonalStatistics(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.GeoAnalyst.esriGeoAnalysisStatisticsEnum,System.Boolean)">
+      <summary>Calculates in each output cell the statistic of the values of all cells in the value raster that belongs to the same zone.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.SpatialAnalyst.IZonalOp.ZonalStatisticsAsTable(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.Geodatabase.IGeoDataset,System.Boolean)">
+      <summary>Calculates all statistics for each zone in a table.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.ConditionalFunction">
+      <summary>A class for a local conditional function.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.ConditionalFunctionClass">
+      <summary>A class for a local conditional function.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisAPrioriEnum">
+      <summary>A Priori Probability Types in Spatial Analyst.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisAPrioriEnum.esriGeoAnalysisAPrioriEqual">
+      <summary>All classes have same apriori probability.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisAPrioriEnum.esriGeoAnalysisAPrioriSample">
+      <summary>APriori probabilities are proportional to number of cells in each class relative to the total number of cells sampled in all classes in the signature file.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisAPrioriEnum.esriGeoAnalysisAPrioriFile">
+      <summary>APriori probabilities will be assigned to each class from an ascii file.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisAreaUnitsEnum">
+      <summary>Area Units Types in Spatial Analyst.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisAreaUnitsEnum.esriGeoAnalysisAreaSquareMapUnits">
+      <summary>Square map units.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisAreaUnitsEnum.esriGeoAnalysisAreaSquareMiles">
+      <summary>Square miles.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisAreaUnitsEnum.esriGeoAnalysisAreaSquareKilometers">
+      <summary>Square kilometers.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisAreaUnitsEnum.esriGeoAnalysisAreaAcres">
+      <summary>Acres.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisAreaUnitsEnum.esriGeoAnalysisAreaHectares">
+      <summary>Hectares.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisAreaUnitsEnum.esriGeoAnalysisAreaSquareYards">
+      <summary>Square yards.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisAreaUnitsEnum.esriGeoAnalysisAreaSquareFeet">
+      <summary>Square feet.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisAreaUnitsEnum.esriGeoAnalysisAreaSquareInches">
+      <summary>Square inches.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisAreaUnitsEnum.esriGeoAnalysisAreaSquareMeters">
+      <summary>Square meters.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisAreaUnitsEnum.esriGeoAnalysisAreaSquareCentimeters">
+      <summary>Square centimeters.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisAreaUnitsEnum.esriGeoAnalysisAreaSquareMillimeters">
+      <summary>Square millimeters.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum">
+      <summary>The operations supported by the LocalFunction, MathFunction and ConditionalFunction classes</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionPlus">
+      <summary>The binary Plus (addition,+) operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionMinus">
+      <summary>The binary Minus (subtraction,-) operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionTimes">
+      <summary>The Times (multiplication,*) operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionSquareRoot">
+      <summary>The Square Root operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionPower">
+      <summary>The Power operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionACos">
+      <summary>The acos operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionASin">
+      <summary>The asin operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionATan">
+      <summary>The ATan operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionATanH">
+      <summary>The ATanH operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionAbs">
+      <summary>The Abs operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionBitwiseAnd">
+      <summary>The BitwiseAnd operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionBitwiseLeftShift">
+      <summary>The BitwiseLeftShift operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionBitwiseNot">
+      <summary>The BitwiseNot operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionBitwiseOr">
+      <summary>The BitwiseOr operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionBitwiseRightShift">
+      <summary>The BitwiseRightShift operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionBitwiseXOr">
+      <summary>The BitwiseXOr operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionBooleanAnd">
+      <summary>The BooleanAnd operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionBooleanNot">
+      <summary>The BooleanNot operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionBooleanOr">
+      <summary>The BooleanOr operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionBooleanXOr">
+      <summary>The BooleanXOr operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionCos">
+      <summary>The Cos operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionCosH">
+      <summary>The CosH operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionDivide">
+      <summary>The Divide operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionEqualTo">
+      <summary>The EqualTo operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionExp">
+      <summary>The Exp operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionExp10">
+      <summary>The Exp10 operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionExp2">
+      <summary>The Exp2 operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionGreaterThan">
+      <summary>The GreaterThan operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionGreaterThanEqual">
+      <summary>The GreaterThanEqual operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionInt">
+      <summary>The Int operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionIsNull">
+      <summary>The IsNull operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionFloat">
+      <summary>The Float operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionLessThan">
+      <summary>The LessThan operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionLessThanEqual">
+      <summary>The LessThanEqual operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionLn">
+      <summary>The Ln operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionLog10">
+      <summary>The Log10 operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionLog2">
+      <summary>The Log2 operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionMajority">
+      <summary>The Majority operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionMax">
+      <summary>The Max operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionMean">
+      <summary>The Mean operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionMed">
+      <summary>The Med operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionMin">
+      <summary>The Min operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionMinority">
+      <summary>The Minority operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionMod">
+      <summary>The Mod operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionNegate">
+      <summary>The Negate operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionNotEqual">
+      <summary>The NotEqual operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionRange">
+      <summary>The Range operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionRoundDown">
+      <summary>The RoundDown operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionRoundUp">
+      <summary>The RoundUp operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionSetNull">
+      <summary>The SetNull operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionSin">
+      <summary>The Sin operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionSinH">
+      <summary>The SinH operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionSquare">
+      <summary>The Square operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionStd">
+      <summary>The Std operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionSum">
+      <summary>The Sum operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionTan">
+      <summary>The Tan operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionTanH">
+      <summary>The TanH operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionVariety">
+      <summary>The Variety operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionACosH">
+      <summary>The ACosH operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionASinH">
+      <summary>The ASinH operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionATan2">
+      <summary>The ATan2 operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionFloatDivide">
+      <summary>The FloatDivide operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionFloorDivide">
+      <summary>The FloorDivide operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionMajorityIgnoreNoData">
+      <summary>The MajorityIgnoreNoData operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionMaxIgnoreNoData">
+      <summary>The MaxIgnoreNoData operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionMeanIgnoreNoData">
+      <summary>The MeanIgnoreNoData operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionMedIgnoreNoData">
+      <summary>The MedIgnoreNoData operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionMinIgnoreNoData">
+      <summary>The MinIgnoreNoData operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionMinorityIgnoreNoData">
+      <summary>The MinorityIgnoreNoData operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionRangeIgnoreNoData">
+      <summary>The RangeIgnoreNoData operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionStdIgnoreNoData">
+      <summary>The StdIgnoreNoData operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionSumIgnoreNoData">
+      <summary>The SumIgnoreNoData operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionVarietyIgnoreNoData">
+      <summary>The VarietyIgnoreNoData operation</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisFunctionEnum.esriGeoAnalysisFunctionCon">
+      <summary>The con operation</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisPathEnum">
+      <summary>Cost path types in Spatial Analyst.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisPathEnum.esriGeoAnalysisPathForEachCell">
+      <summary>A cost path is calculated for each cell in the source.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisPathEnum.esriGeoAnalysisPathForEachZone">
+      <summary>A cost path is calculated for each zone in the source.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisPathEnum.esriGeoAnalysisPathBestSingle">
+      <summary>The best single cost path for all source cells is calculated.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisSortEnum">
+      <summary>Zone sorting types in Spatial Analyst.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisSortEnum.esriGeoAnalysisSortNone">
+      <summary>No sorting by size.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisSortEnum.esriGeoAnalysisSortDescending">
+      <summary>Sort zones in descending order by size.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisSortEnum.esriGeoAnalysisSortAscending">
+      <summary>Sort zones in ascending order by size.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisStreamOrderEnum">
+      <summary>Stream ordering method types in Spatial Analyst.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisStreamOrderEnum.esriGeoAnalysisStreamOrderStrahler">
+      <summary>Stream ordering by Strahler method.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisStreamOrderEnum.esriGeoAnalysisStreamOrderShreve">
+      <summary>Stream ordering by Shreve method.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisZonalGeometryEnum">
+      <summary>Zonal geometry types in Spatial Analyst.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisZonalGeometryEnum.esriGeoAnalysisZonalGeometryArea">
+      <summary>The area for each zone is calculated.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisZonalGeometryEnum.esriGeoAnalysisZonalGeometryPerimeter">
+      <summary>The perimeter for each zone is calculated.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisZonalGeometryEnum.esriGeoAnalysisZonalGeometryThickness">
+      <summary>The  thickness for each zone is calculated.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGeoAnalysisZonalGeometryEnum.esriGeoAnalysisZonalGeometryCentroid">
+      <summary>The centroid for each zone is calculated.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.esriGPSANeighborhoodTextEnum">
+      <summary>Text types of SetAsText/GetAsText for irregular and weight neighborhhods.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGPSANeighborhoodTextEnum.esriGPSANeighborhoodTextFullContents">
+      <summary>Full contents for irregular and weight neighborhhods.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGPSANeighborhoodTextEnum.esriGPSANeighborhoodTextFileName">
+      <summary>File name for irregular and weight neighborhhods.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.esriGPSARemapTypeEnum">
+      <summary>Remap types in geo-processing.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGPSARemapTypeEnum.esriGPSARemapNumber">
+      <summary>Number remap.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGPSARemapTypeEnum.esriGPSARemapString">
+      <summary>String remap.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGPSARemapTypeEnum.esriGPSARemapNone">
+      <summary>No remap.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.esriGPSATopoTypeEnum">
+      <summary>TopoFeature layer types in geo-processing.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGPSATopoTypeEnum.esriGPSATopoPointElevation">
+      <summary>Point elevation.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGPSATopoTypeEnum.esriGPSATopoContour">
+      <summary>Contour.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGPSATopoTypeEnum.esriGPSATopoSink">
+      <summary>Sink.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGPSATopoTypeEnum.esriGPSATopoStream">
+      <summary>Stream.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGPSATopoTypeEnum.esriGPSATopoBoundary">
+      <summary>Boundary.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGPSATopoTypeEnum.esriGPSATopoLake">
+      <summary>Lake.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGPSATopoTypeEnum.esriGPSATopoCliff">
+      <summary>Cliff.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGPSATopoTypeEnum.esriGPSATopoExclusion">
+      <summary>Exclusion.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriGPSATopoTypeEnum.esriGPSATopoCoast">
+      <summary>Coast.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.esriPathDistanceHorizontalEnum">
+      <summary>Path Distance Horizontal Factor Types.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriPathDistanceHorizontalEnum.esriPathDistanceHorizontalInvalid">
+      <summary>Invalid.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriPathDistanceHorizontalEnum.esriPathDistanceHorizontalBinary">
+      <summary>Binary.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriPathDistanceHorizontalEnum.esriPathDistanceHorizontalForward">
+      <summary>Forward.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriPathDistanceHorizontalEnum.esriPathDistanceHorizontalLinear">
+      <summary>Linear.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriPathDistanceHorizontalEnum.esriPathDistanceHorizontalInverseLinear">
+      <summary>Inverse Linear.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriPathDistanceHorizontalEnum.esriPathDistanceHorizontalTable">
+      <summary>Table.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.esriPathDistanceVerticalEnum">
+      <summary>Path Distance Vertical Factor Types.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriPathDistanceVerticalEnum.esriPathDistanceVerticalInvalid">
+      <summary>Invalid.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriPathDistanceVerticalEnum.esriPathDistanceVerticalBinary">
+      <summary>Binary.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriPathDistanceVerticalEnum.esriPathDistanceVerticalLinear">
+      <summary>Linear.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriPathDistanceVerticalEnum.esriPathDistanceVerticalInverseLinear">
+      <summary>Inverse Linear.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriPathDistanceVerticalEnum.esriPathDistanceVerticalTable">
+      <summary>Table.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriPathDistanceVerticalEnum.esriPathDistanceVerticalSymLinear">
+      <summary>Symmetrical Linear.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriPathDistanceVerticalEnum.esriPathDistanceVerticalSymInverseLinear">
+      <summary>Symmetrical Inverse Linear.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriPathDistanceVerticalEnum.esriPathDistanceVerticalCos">
+      <summary>Cos.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriPathDistanceVerticalEnum.esriPathDistanceVerticalSec">
+      <summary>Sec.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriPathDistanceVerticalEnum.esriPathDistanceVerticalCosSec">
+      <summary>Cos and Sec.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriPathDistanceVerticalEnum.esriPathDistanceVerticalSecCos">
+      <summary>Sec and Cos.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.esriRasterRadiusEnum">
+      <summary>Text types of Raster Radia.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriRasterRadiusEnum.esriRasterRadiusFixed">
+      <summary>Fixed Radius.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriRasterRadiusEnum.esriRasterRadiusVariable">
+      <summary>Variable Radius.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.esriSAFuzzyFunctionEnum">
+      <summary>Types of Fuzzy Function.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSAFuzzyFunctionEnum.esriSAFuzzyFunctionUnknown">
+      <summary>Unknown Fuzzy Function.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSAFuzzyFunctionEnum.esriSAFuzzyFunctionGaussian">
+      <summary>Gaussian Fuzzy Function.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSAFuzzyFunctionEnum.esriSAFuzzyFunctionSmall">
+      <summary>Small Fuzzy Function.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSAFuzzyFunctionEnum.esriSAFuzzyFunctionLarge">
+      <summary>Large Fuzzy Function.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSAFuzzyFunctionEnum.esriSAFuzzyFunctionNear">
+      <summary>Near Fuzzy Function.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSAFuzzyFunctionEnum.esriSAFuzzyFunctionMSSmall">
+      <summary>MSSmall Fuzzy Function.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSAFuzzyFunctionEnum.esriSAFuzzyFunctionMSLarge">
+      <summary>MSLarge Fuzzy Function.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSAFuzzyFunctionEnum.esriSAFuzzyFunctionLinear">
+      <summary>Linear Fuzzy Function.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.esriSAFuzzyHedgeEnum">
+      <summary>Types of Fuzzy Hedge.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSAFuzzyHedgeEnum.esriSAFuzzyHedgeUnknown">
+      <summary>Unknown Fuzzy hedge.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSAFuzzyHedgeEnum.esriSAFuzzyHedgeNone">
+      <summary>No Hedge.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSAFuzzyHedgeEnum.esriSAFuzzyHedgeSomewhat">
+      <summary>Hedge of Somewhat degree.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSAFuzzyHedgeEnum.esriSAFuzzyHedgeVery">
+      <summary>Hedge of Very degree.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.esriSAFuzzyOverlayEnum">
+      <summary>Types of Fuzzy Overlay.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSAFuzzyOverlayEnum.esriSAFuzzyOverlayUnknown">
+      <summary>Unknown Fuzzy overlay.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSAFuzzyOverlayEnum.esriSAFuzzyOverlayAnd">
+      <summary>AND Fuzzy Overlay.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSAFuzzyOverlayEnum.esriSAFuzzyOverlayOr">
+      <summary>OR Fuzzy Overlay.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSAFuzzyOverlayEnum.esriSAFuzzyOverlaySum">
+      <summary>SUM Fuzzy Overlay.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSAFuzzyOverlayEnum.esriSAFuzzyOverlayProduct">
+      <summary>PRODUCT Fuzzy Overlay.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSAFuzzyOverlayEnum.esriSAFuzzyOverlayGamma">
+      <summary>GAMMA Fuzzy Overlay.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.esriSATransformationFunctionEnum">
+      <summary>Types of Transformation Function.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSATransformationFunctionEnum.esriSATransformationFunctionUnknown">
+      <summary>Unknown Transformation Function.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSATransformationFunctionEnum.esriSATransformationFunctionGaussian">
+      <summary>Gaussian Transformation Function.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSATransformationFunctionEnum.esriSATransformationFunctionSmall">
+      <summary>Small Transformation Function.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSATransformationFunctionEnum.esriSATransformationFunctionLarge">
+      <summary>Large Transformation Function.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSATransformationFunctionEnum.esriSATransformationFunctionNear">
+      <summary>Near Transformation Function.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSATransformationFunctionEnum.esriSATransformationFunctionMSSmall">
+      <summary>MSSmall Transformation Function.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSATransformationFunctionEnum.esriSATransformationFunctionMSLarge">
+      <summary>MSLarge Transformation Function.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSATransformationFunctionEnum.esriSATransformationFunctionLinear">
+      <summary>Linear Transformation Function.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSATransformationFunctionEnum.esriSATransformationFunctionSymmetricLinear">
+      <summary>Symmetric Linear Transformation Function.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSATransformationFunctionEnum.esriSATransformationFunctionExponential">
+      <summary>Exponential Transformation Function.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSATransformationFunctionEnum.esriSATransformationFunctionLogarithm">
+      <summary>Logorithm Transformation Function.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSATransformationFunctionEnum.esriSATransformationFunctionPower">
+      <summary>Power Transformation Function.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSATransformationFunctionEnum.esriSATransformationFunctionLogisticGrowth">
+      <summary>Logistic Growth Transformation Function.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSATransformationFunctionEnum.esriSATransformationFunctionLogisticDecay">
+      <summary>Logistic Decay Transformation Function.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSATransformationFunctionEnum.esriSATransformationFunctionCustom">
+      <summary>Bezier Transformation Function.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.esriSolarAnalysisAreaEnum">
+      <summary>AAAAA.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSolarAnalysisAreaEnum.esriSolarAnalysisAreaInvalid">
+      <summary>AAAAA.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSolarAnalysisAreaEnum.esriSolarAnalysisAreaArea">
+      <summary>AAAAA.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSolarAnalysisAreaEnum.esriSolarAnalysisAreaPoints">
+      <summary>AAAAA.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.esriSolarDeffuseModelEnum">
+      <summary>AAAAA.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSolarDeffuseModelEnum.esriSolarDeffuseModelInvalid">
+      <summary>AAAAA.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSolarDeffuseModelEnum.esriSolarDeffuseModelUniformSky">
+      <summary>AAAAA.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSolarDeffuseModelEnum.esriSolarDiffuseModelOvercastSky">
+      <summary>AAAAA.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.esriSolarDirectModelEnum">
+      <summary>AAAAA.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSolarDirectModelEnum.esriSolarDirectModelInvalid">
+      <summary>AAAAA.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSolarDirectModelEnum.esriSolarDirectModelSimpleTransmittivity">
+      <summary>AAAAA.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.esriSolarSlopeAspectEnum">
+      <summary>AAAAA.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSolarSlopeAspectEnum.esriSolarSlopeAspectInvalid">
+      <summary>AAAAA.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSolarSlopeAspectEnum.esriSolarSlopeAspectFromDEM">
+      <summary>AAAAA.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSolarSlopeAspectEnum.esriSolarSlopeAspectFlat">
+      <summary>AAAAA.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSolarSlopeAspectEnum.esriSolarSlopeAspectFromTable">
+      <summary>AAAAA.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.SpatialAnalyst.esriSolarTimeConfigEnum">
+      <summary>AAAAA.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSolarTimeConfigEnum.esriSolarTimeConfigInvalid">
+      <summary>AAAAA.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSolarTimeConfigEnum.esriSolarTimeConfigSpecialDays">
+      <summary>AAAAA.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSolarTimeConfigEnum.esriSolarTimeConfigWithinDay">
+      <summary>AAAAA.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSolarTimeConfigEnum.esriSolarTimeConfigMultiDays">
+      <summary>AAAAA.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.SpatialAnalyst.esriSolarTimeConfigEnum.esriSolarTimeConfigWholeYear">
+      <summary>AAAAA.</summary>
+    </member>
+  </members>
+</doc>
